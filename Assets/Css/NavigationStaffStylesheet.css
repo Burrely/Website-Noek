@@ -1,0 +1,101 @@
+div#NavigationStaff {
+    position: absolute;
+    overflow: hidden;
+    left: 0vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    transition-property: left;
+    transition-duration: 3s;
+}
+
+div#NavigationStaff.minimized {
+    left: -100vw;
+}
+
+div#NavigationStaff > *:not(.noStaff) {
+    background-color: var(--primary-color);
+    position: relative;
+    width: 100%;
+    height: 20px;
+}
+
+div#NavigationStaff > *:nth-child(2) {
+    top: 100px;
+}
+
+div#NavigationStaff > *:nth-child(3) {
+    top: 200px;
+}
+
+div#NavigationStaff > *:nth-child(4) {
+    top: 300px;
+}
+
+div#NavigationStaff > *:nth-child(5) {
+    top: 400px;
+}
+
+@keyframes notesLeftToRight {
+    from {
+        left: 100vw;
+    }
+    to {
+        left: calc(0vw - 100px);
+    }
+}
+
+div#NavigationStaff > * > div {
+    position: relative;
+    display: block;
+    content: "";
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    transition-property: transform;
+    transition-duration: 0.35s;
+
+    top: -40px;
+    left: 200px;
+    animation: notesLeftToRight 10s infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+
+div#NavigationStaff > *:nth-child(2) > div {
+    animation-delay: -1s;
+}
+
+div#NavigationStaff > *:nth-child(3) > div {
+    animation-delay: -5s;
+}
+
+div#NavigationStaff > *:nth-child(4) > div {
+    animation-delay: -7s;
+}
+
+div#NavigationStaff > *:nth-child(5) > div {
+    animation-delay: -3s;
+}
+
+div#NavigationStaff > * > div:hover {
+    transform: scale(1.2);
+    animation-play-state: paused;
+}
+
+div#NavigationStaff > * > div::after {
+    position: relative;
+    display: block;
+    content: "";
+    top: 10%;
+    margin: auto;
+    background-color: var(--tertiary-tint);
+    height: 80%;
+    width: 80%;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    
+    background-size: cover;
+    background-image: url("https://cdn.discordapp.com/attachments/531401348470669324/649223140924456970/Burrely_front_simplistic-01.png");
+}

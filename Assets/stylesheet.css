@@ -1,0 +1,48 @@
+
+
+* {
+    box-sizing: border-box;
+    --primary-color: #EAF0F2;
+    --secondary-color: #202226;
+    --primary-tint: #BED1D8;
+    --secondary-tint: #8499A5;
+    --tertiary-tint: #4C6472;
+}
+
+@font-face {
+    font-family: Metropolis regular;
+    src: url("Fonts/Metropolis-Regular.otf");
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.overlay h1, .overlay h2, .overlay h3, .overlay h4, .overlay h5, .overlay h6, .overlay p, .overlay small {
+    font-family: Metropolis regular;
+    color: var(--primary-color);
+}
+
+div.noStaff {
+    transform: translate(20%,40px);
+}
+
+div#content {
+    height: 100vh;
+    width: 100vw;
+}
+
+div#FoldOutNavButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 80px;
+    width: 80px;
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+div#FoldOutNavButton:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
