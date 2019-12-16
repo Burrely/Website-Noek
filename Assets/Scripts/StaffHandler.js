@@ -31,11 +31,17 @@ class Staff {
             var barLine = document.createElement("div");
             var barNote = document.createElement("div");
             var noteImage = document.createElement("div");
+            var noteTooltip = document.createElement("span");
             document.getElementById("NavigationStaff").append(barLine);
             barLine.append(barNote);
             barNote.append(noteImage);
+            barNote.append(noteTooltip);
 
+            barNote.className = 'tooltip';
+            noteTooltip.innerHTML = "tool tip text! uwu";
+            
             this.notes.push(barNote);
+
         }
 
     }
