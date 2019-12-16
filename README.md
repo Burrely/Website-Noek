@@ -1,3 +1,3 @@
-# NOOKNOOK
-Noek mooie website door de professionele websitebouwers
-Ik wil deze gewoon clonen naar mn desktop maar het mag niet huilie huilie
+# Website Noek
+
+De website voor Noek, de enige echte. De website van Noek is een uiteenlopend project waarvoor deze repo bestaat.
