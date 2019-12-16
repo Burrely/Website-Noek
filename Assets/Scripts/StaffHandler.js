@@ -99,9 +99,7 @@ class Staff {
 
 
 
-
-
 //
 window.onload = function() {
-    staff = new Staff();
+    staff = new Staff(5);
 }

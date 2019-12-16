@@ -36,6 +36,10 @@ div#NavigationStaff > *:nth-child(5) {
     top: 400px;
 }
 
+div#NavigationStaff > *:nth-child(6) {
+    top: 500px;
+}
+
 @keyframes notesLeftToRight {
     from {
         left: 100vw;
@@ -72,11 +76,15 @@ div#NavigationStaff > *:nth-child(3) > div {
 }
 
 div#NavigationStaff > *:nth-child(4) > div {
-    animation-delay: -7s;
+    animation-delay: -8s;
 }
 
 div#NavigationStaff > *:nth-child(5) > div {
     animation-delay: -3s;
+}
+
+div#NavigationStaff > *:nth-child(6) > div {
+    animation-delay: -6s;
 }
 
 div#NavigationStaff > * > div:hover {
