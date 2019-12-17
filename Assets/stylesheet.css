@@ -45,3 +45,30 @@ div#FoldOutNavButton:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
+
+.clipImgWrap {
+    position: absolute;
+    z-index: -1;
+}
+
+.clipImgWrap.topLeftCorner {
+    left: 0;
+    filter: drop-shadow(3px 3px 8px rgba(50, 50, 0, 0.5));
+}
+
+.clipImgWrap.topRightCorner {
+    right: 0;
+    filter: drop-shadow(-3px 3px 8px rgba(50, 50, 0, 0.5));
+}
+
+.clipImgWrap.topLeftCorner > * {
+    width: 320px;
+    height: 320px;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
+.clipImgWrap.topRightCorner > * {
+    width: 320px;
+    height: 320px;
+    clip-path: polygon(100% 0%, 0% 0%, 100% 100%);
+}
