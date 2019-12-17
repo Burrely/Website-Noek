@@ -8,10 +8,11 @@ class Staff {
         this.updateFPS = 24;
         this.notePixelMovementPerSecond = -100;
         this.noteLocalContentUrl = [
-            "index.html",
+            "music.html",
             "shop.html",
-            "social.html",
-            "tour.html"
+            "tour.html",
+            "boigraphy.html",
+            "contact.html"
         ];
         this.contentContainer = document.getElementById("Content");
         this.staffOverlay = document.getElementById("NavigationStaff"); 
@@ -31,11 +32,17 @@ class Staff {
             var barLine = document.createElement("div");
             var barNote = document.createElement("div");
             var noteImage = document.createElement("div");
+            var noteTooltip = document.createElement("span");
             document.getElementById("NavigationStaff").append(barLine);
             barLine.append(barNote);
             barNote.append(noteImage);
+            barNote.append(noteTooltip);
 
+            barNote.className = 'tooltip';
+            noteTooltip.innerHTML = "tool tip text! uwu";
+            
             this.notes.push(barNote);
+
         }
 
     }
@@ -52,7 +59,7 @@ class Staff {
     
     OnNoteClick = function(url, object = this) {
 
-        object.staffOverlay.classList.add("minimized");
+        object.Minimize();
         
         var contentContainer = object.contentContainer;
         var contentRequest = new XMLHttpRequest();
@@ -68,6 +75,20 @@ class Staff {
         contentRequest.open("GET", url, true);
         contentRequest.send();
 
+    }
+
+    Minimize = function(object = this) {
+
+        object.staffOverlay.classList.add("minimized");
+        document.body.style.overflow = "visible";
+
+    }
+
+    Maximize = function(object = this) {
+
+        object.staffOverlay.classList.remove("minimized");
+        document.body.style.overflow = "hidden";
+        
     }
 
     // ## DEPRECATED ##
@@ -99,9 +120,7 @@ class Staff {
 
 
 
-
-
 //
 window.onload = function() {
-    staff = new Staff();
+    staff = new Staff(5);
 }
