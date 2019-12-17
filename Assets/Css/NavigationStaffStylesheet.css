@@ -89,7 +89,7 @@ div#NavigationStaff > * > div::after {
 }
 
 /* Zonder ::after */
-.tooltip span {
+.noteTooltip span {
     visibility: hidden;
     width: 120px;
     background-color: white;
@@ -100,9 +100,11 @@ div#NavigationStaff > * > div::after {
   
     /* Position the tooltip */
     position: absolute;
+    top: -40px;
+    right: -10px;
     z-index: 1;
 }
-.tooltip:hover span {
+.noteTooltip:hover span {
     visibility: visible;
 }
 
