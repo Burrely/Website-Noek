@@ -17,8 +17,12 @@ body {
     background-color: var(--primary-color);
 }
 
-.overlay h1, .overlay h2, .overlay h3, .overlay h4, .overlay h5, .overlay h6, .overlay p, .overlay small {
+h1, h2, h3, h4, h5, h6, p, small {
     font-family: Metropolis regular;
+    color: var(--secondary-color);
+}
+
+.overlay h1, .overlay h2, .overlay h3, .overlay h4, .overlay h5, .overlay h6, .overlay p, .overlay small {
     color: var(--primary-color);
 }
 
