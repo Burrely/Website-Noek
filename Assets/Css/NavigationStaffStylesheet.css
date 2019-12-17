@@ -161,3 +161,10 @@ div#NavigationStaff > *:nth-child(6) > div::after {
     background-image: url('/Assets/Images/contact.png');
     
 }
+
+#GClef {
+    left: -240px;
+    height: 620px;
+    fill: var(--primary-color);
+    position: absolute;
+}
