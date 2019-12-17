@@ -1,5 +1,5 @@
 div#NavigationStaff {
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     left: 0vw;
     width: 100vw;
@@ -11,6 +11,7 @@ div#NavigationStaff {
 
 div#NavigationStaff.minimized {
     left: -100vw;
+    right: 0vw;
 }
 
 div#NavigationStaff > *:not(.noStaff) {

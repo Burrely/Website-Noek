@@ -8,10 +8,11 @@ class Staff {
         this.updateFPS = 24;
         this.notePixelMovementPerSecond = -100;
         this.noteLocalContentUrl = [
-            "index.html",
+            "music.html",
             "shop.html",
-            "social.html",
-            "tour.html"
+            "tour.html",
+            "boigraphy.html",
+            "contact.html"
         ];
         this.contentContainer = document.getElementById("Content");
         this.staffOverlay = document.getElementById("NavigationStaff"); 
@@ -58,7 +59,7 @@ class Staff {
     
     OnNoteClick = function(url, object = this) {
 
-        object.staffOverlay.classList.add("minimized");
+        object.Minimize();
         
         var contentContainer = object.contentContainer;
         var contentRequest = new XMLHttpRequest();
@@ -74,6 +75,20 @@ class Staff {
         contentRequest.open("GET", url, true);
         contentRequest.send();
 
+    }
+
+    Minimize = function(object = this) {
+
+        object.staffOverlay.classList.add("minimized");
+        document.body.style.overflow = "visible";
+
+    }
+
+    Maximize = function(object = this) {
+
+        object.staffOverlay.classList.remove("minimized");
+        document.body.style.overflow = "hidden";
+        
     }
 
     // ## DEPRECATED ##
