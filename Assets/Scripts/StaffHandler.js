@@ -11,9 +11,16 @@ class Staff {
             "music.html",
             "shop.html",
             "tour.html",
-            "boigraphy.html",
+            "biography.html",
             "contact.html"
         ];
+        this.toolTipTexts = [
+            "Muziek",
+            "Merch",
+            "Tour",
+            "Biografie",
+            "Contact"
+        ]
         this.contentContainer = document.getElementById("Content");
         this.staffOverlay = document.getElementById("NavigationStaff"); 
         this.notes = [];
@@ -38,8 +45,8 @@ class Staff {
             barNote.append(noteImage);
             barNote.append(noteTooltip);
 
-            barNote.className = 'tooltip';
-            noteTooltip.innerHTML = "tool tip text! uwu";
+            barNote.className = 'noteTooltip';
+            noteTooltip.innerHTML = this.toolTipTexts[i];
             
             this.notes.push(barNote);
 
