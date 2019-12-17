@@ -59,6 +59,10 @@ div.fluid-container > div.container {
     z-index: -100;
 }
 
+.clipImgWrap + div.container {
+    min-height: 320px;
+}
+
 .clipImgWrap.topLeftCorner {
     left: 0;
     filter: drop-shadow(3px 3px 8px rgba(50, 50, 0, 0.5));
