@@ -67,25 +67,6 @@ div#NavigationStaff > * > div {
     animation-timing-function: linear;
 }
 
-div#NavigationStaff > *:nth-child(2) > div {
-    animation-delay: -1s;
-}
-
-div#NavigationStaff > *:nth-child(3) > div {
-    animation-delay: -5s;
-}
-
-div#NavigationStaff > *:nth-child(4) > div {
-    animation-delay: -8s;
-}
-
-div#NavigationStaff > *:nth-child(5) > div {
-    animation-delay: -3s;
-}
-
-div#NavigationStaff > *:nth-child(6) > div {
-    animation-delay: -6s;
-}
 
 div#NavigationStaff > * > div:hover {
     transform: scale(1.2);
@@ -103,7 +84,77 @@ div#NavigationStaff > * > div::after {
     width: 80%;
     border-radius: 100%;
     background-color: var(--primary-color);
-    
     background-size: cover;
-    background-image: url("https://cdn.discordapp.com/attachments/531401348470669324/649223140924456970/Burrely_front_simplistic-01.png");
+}
+
+/* Zonder ::after */
+.tooltip span {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+   
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover span {
+    visibility: visible;
+}
+
+div#NavigationStaff > *:nth-child(2) > div {
+    
+}
+
+
+div#NavigationStaff > *:nth-child(3) > div {
+
+    
+}
+
+div#NavigationStaff > *:nth-child(4) > div {
+
+    
+}
+
+div#NavigationStaff > *:nth-child(5) > div {
+    
+    
+}
+
+div#NavigationStaff > *:nth-child(6) > div {
+    
+    
+    
+}
+
+
+/* Met ::after */
+div#NavigationStaff > *:nth-child(2) > div::after {
+
+    background-image: url('/Assets/Images/Muzieknoot.png');
+}
+
+div#NavigationStaff > *:nth-child(3) > div::after {
+
+    background-image: url('/Assets/Images/whiteShirt.png');
+}
+
+div#NavigationStaff > *:nth-child(4) > div::after {
+
+    background-image: url('/Assets/Images/van.png');
+}
+
+div#NavigationStaff > *:nth-child(5) > div::after {
+    
+    background-image: url('/Assets/Images/Noek.png');
+}
+
+div#NavigationStaff > *:nth-child(6) > div::after {
+    
+    background-image: url('/Assets/Images/contact.png');
+    
 }
