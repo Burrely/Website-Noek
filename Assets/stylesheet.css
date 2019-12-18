@@ -85,6 +85,9 @@ div.fluid-container > div.container {
     clip-path: polygon(100% 0%, 0% 0%, 100% 100%);
 }
 
+.card {
+    margin-bottom: 20px;
+}
 /* Shop html css */
 div.products {
     display: flex;
@@ -169,8 +172,6 @@ div.product:hover a.img img{
     -ms-transform: translate(-50%, -50%);
     white-space: nowrap;
   }
-  
-  @charset "UTF-8";
   
   .svg-inline--fa {
     vertical-align: -0.200em;
