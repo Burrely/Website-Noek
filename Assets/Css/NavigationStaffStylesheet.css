@@ -110,29 +110,23 @@ div#NavigationStaff > * > div::after {
 }
 
 div#NavigationStaff > *:nth-child(2) > div {
-    
+    animation-delay: -1s;
 }
 
-
 div#NavigationStaff > *:nth-child(3) > div {
-
-    
+    animation-delay: -5s;
 }
 
 div#NavigationStaff > *:nth-child(4) > div {
-
-    
+    animation-delay: -8s;
 }
 
 div#NavigationStaff > *:nth-child(5) > div {
-    
-    
+    animation-delay: -3s;
 }
 
 div#NavigationStaff > *:nth-child(6) > div {
-    
-    
-    
+    animation-delay: -6s;
 }
 
 
