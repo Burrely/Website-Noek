@@ -7,7 +7,7 @@ div#NavigationStaff {
     height: 100vh;
     background-color: var(--secondary-color);
     transition-property: left;
-    transition-duration: 3s;
+    transition-duration: 2s;
 }
 
 div#NavigationStaff.minimized {
@@ -52,6 +52,7 @@ div#NavigationStaff > *:nth-child(6) {
 }
 
 div#NavigationStaff > * > div {
+    cursor: pointer;
     position: relative;
     display: block;
     content: "";
@@ -110,29 +111,23 @@ div#NavigationStaff > * > div::after {
 }
 
 div#NavigationStaff > *:nth-child(2) > div {
-    
+    animation-delay: -1s;
 }
 
-
 div#NavigationStaff > *:nth-child(3) > div {
-
-    
+    animation-delay: -5s;
 }
 
 div#NavigationStaff > *:nth-child(4) > div {
-
-    
+    animation-delay: -8s;
 }
 
 div#NavigationStaff > *:nth-child(5) > div {
-    
-    
+    animation-delay: -3s;
 }
 
 div#NavigationStaff > *:nth-child(6) > div {
-    
-    
-    
+    animation-delay: -6s;
 }
 
 
@@ -161,4 +156,11 @@ div#NavigationStaff > *:nth-child(6) > div::after {
     
     background-image: url('/Assets/Images/contact.png');
     
+}
+
+#GClef {
+    left: -240px;
+    height: 620px;
+    fill: var(--primary-color);
+    position: absolute;
 }
