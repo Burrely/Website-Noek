@@ -51,6 +51,7 @@ div#NavigationStaff > *:nth-child(6) {
 }
 
 div#NavigationStaff > * > div {
+    cursor: pointer;
     position: relative;
     display: block;
     content: "";
